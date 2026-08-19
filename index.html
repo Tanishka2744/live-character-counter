@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Character Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="counter-card">
+            <div class="header">
+                <span class="icon">💭</span>
+                <h1>What's on your mind?</h1>
+                <p>Share your thoughts with us.</p>
+            </div>
+
+            <div class="textarea-wrapper">
+                <textarea id="message" maxlength="200" placeholder="Start typing something here..."></textarea>
+
+                <div class="textarea-footer">
+                    <span id="status">You can start typing...</span>
+                    <span class="counter">
+                        <span id="count">0</span> / 200
+                    </span>
+                </div>
+            </div>
+
+            <div class="progress-section">
+                <div class="progress-bar">
+                    <div id="progress"></div>
+                </div>
+
+                <div class="progress-info">
+                    <span id="remaining">200 characters left</span>
+                    <span id="percentage">0%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
